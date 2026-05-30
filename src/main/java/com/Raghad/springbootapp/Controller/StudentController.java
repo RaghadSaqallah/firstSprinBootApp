@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- *
- * @author AL
+ * @author Raghad Saqallah 
+ * ID: 220232444
  */
 @RestController
 @RequestMapping("/students")
@@ -53,9 +53,7 @@ public class StudentController {
             @RequestParam String major,
             @RequestParam String grade) {
         Student s = repository.findById(id).get();
-
             if (s != null) {
-
                 s.setName(name);
                 s.setMajor(major);
                 s.setGrade(grade);

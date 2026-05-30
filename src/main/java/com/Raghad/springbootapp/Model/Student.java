@@ -11,7 +11,8 @@ import jakarta.persistence.Id;
 
 /**
  *
- * @author AL
+ * @author Raghad Saqallah 
+ * ID: 220232444
  */
 @Entity // ليعرف سبرينغ أن هذا الجدول سيتم إنشاؤه في قاعدة البيانات
 public class Student {
@@ -54,6 +55,11 @@ public class Student {
 
     public void setGrade(String grade) {
         this.grade = grade;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" + "id=" + id + ", name=" + name + ", major=" + major + ", grade=" + grade + '}';
     }
     
     
